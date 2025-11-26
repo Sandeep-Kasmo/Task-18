@@ -1,0 +1,40 @@
+# Python cache directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment directories
+venv/
+.env/
+.venv/
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment / config files
+config/config.ini
+*.env
+
+# Logs
+*.log
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+
+#  Jupyter / notebook checkpoints
+.ipynb_checkpoints/
+
+# Additional cache
+.cache/
+
+#  Local data output (if created)
+data/
+output/

@@ -1,0 +1,6 @@
+pandas
+requests
+msal
+office365-rest-python-client
+configparser
+python-dotenv
