@@ -3,20 +3,21 @@
 This project implements a lightweight ETL (Extract–Transform–Load) workflow for retrieving project metadata from a SharePoint site, processing it, and preparing it for downstream reporting or analytics systems. The pipeline is modular, configurable, and designed to run both locally and within automated job environments.
 
 📁 Folder Structure
-        SHAREPOINT/
-        │
-        ├── config/
-        │   └── config.ini              # Configuration: SharePoint URLs, credentials, file paths
-        │
-        ├── src/
-        │   ├── config_loader.py        # Utility to parse and load config.ini settings
-        │   ├── extract.py              # Extract step: connects to SharePoint and fetches metadata
-        │   ├── transform.py            # Transform step: cleans, validates, and shapes the data
-        │   └── load.py                 # Load step: outputs CSV, DB insert, or other targets
-        │
-        ├── main.py                     # Pipeline orchestrator combining Extract → Transform → Load
-        ├── requirements.txt            # Python dependencies for the entire project
-        └── .gitignore                  # Version control exclusions
+
+                SHAREPOINT/
+                │
+                ├── config/
+                │   └── config.ini              # Configuration: SharePoint URLs, credentials, file paths
+                │
+                ├── src/
+                │   ├── config_loader.py        # Utility to parse and load config.ini settings
+                │   ├── extract.py              # Extract step: connects to SharePoint and fetches metadata
+                │   ├── transform.py            # Transform step: cleans, validates, and shapes the data
+                │   └── load.py                 # Load step: outputs CSV, DB insert, or other targets
+                │
+                ├── main.py                     # Pipeline orchestrator combining Extract → Transform → Load
+                ├── requirements.txt            # Python dependencies for the entire project
+                └── .gitignore                  # Version control exclusions
 
 🎯 Objective
 
@@ -50,13 +51,13 @@ Clean and maintainable architecture suitable for extensions
 
 1. Install dependencies
 
-        pip install -r requirements.txt
+                pip install -r requirements.txt
 
 2. Configure SharePoint settings
 
 Edit the file:
 
-        config/config.ini
+                config/config.ini
 
 
 Provide:
@@ -73,14 +74,14 @@ Output destination
 
 Run the entire ETL:
 
-        python main.py
+                python main.py
 
 
 Or run each step individually:
 
-        python src/extract.py
-        python src/transform.py
-        python src/load.py
+                python src/extract.py
+                python src/transform.py
+                python src/load.py
 
 📥 Extract Step
 
@@ -132,5 +133,6 @@ Data quality checks
 Cloud deployment pipelines
 
 📄 License
+
 
 This project can be adapted and used freely within your organization.
